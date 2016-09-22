@@ -1,3 +1,0 @@
-name=[A-Z][a-z]+
-email=\\b[\\w.%-]+@[-.\\w]+\\.[A-Za-z]{2,4}\\b
-money=\\d+
