@@ -80,7 +80,7 @@ public class Controller {
         while (true) {
             view.printMessage(view.INPUT_COMMENT);
             input = sc.nextLine();
-            if (input.matches("^[^0-9]{1,50}$")) {
+            if (input.matches("[\\S\\s]{1,150}")) {
                 model.setComment(input);
                 break;
             } else {
