@@ -30,8 +30,8 @@ public class Main {
                         name.substring(1))) {
                     if (method.isAnnotationPresent(Ignore.class)) {
                         Ignore annot = method.getAnnotation(Ignore.class);
-                        System.out.println(annot.description());
-
+                        System.out.println(method.getName());
+                        System.out.println(method.invoke(obj, value));
                         break;
                     }
                     if (method.getParameterTypes()[0].isPrimitive()) {
@@ -54,15 +54,16 @@ public class Main {
             Class[] paramTypes = method.getParameterTypes();
             System.out.print("Типы параметров:");
             for (Class paramType : paramTypes) {
-                System.out.print(" " + paramType.getName());
+                System.out.print(" " + paramType.getName()+ "\n");
             }
         }
-        System.out.println(obj);
         String cllass = clazz.getName();
         Class superClassName = clazz.getSuperclass();
         System.out.println(cllass);
         System.out.println(superClassName);
         Class[] paramTypes = new Class[]{int.class, String.class};
+
+        System.out.println(obj);
 
     }
 }
