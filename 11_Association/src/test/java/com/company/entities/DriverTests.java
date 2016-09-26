@@ -41,8 +41,8 @@ public class DriverTests {
         driverLicense.setFromDate(fromdate);
         Date expdate = new Date(2011, 11, 1);
         driverLicense.setExpires(expdate);
-        driverLicense = new DriverLicense(driverLicense.getFromDate(), categoty, driverLicense.getExpires());
-        Assert.assertTrue(driverLicense.getExpires().before(driverLicense.getFromDate()));
+        driverLicense = new DriverLicensedriverLicense.getExpires(), categoty, driverLicense.getFromDate());
+        Assert.assertTrue(driverLicense.getExpires().after(driverLicense.getFromDate()));
     }
 
     @Test(expected = IllegalArgumentException.class)
