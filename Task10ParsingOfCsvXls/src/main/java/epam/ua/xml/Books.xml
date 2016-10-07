@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--xsd  -->
+<books>
+    <list>
+        <item id="1">
+            <title>War and peace</title>
+            <quantity>3</quantity>
+        </item>
+        <item id="2">
+            <title>NotWar and peace</title>
+            <quantity>4</quantity>
+        </item>
+    </list>
+</books>
